@@ -59,7 +59,7 @@ bonus: ${OBJS} ${BONUS_OBJS}
 	ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
 
 clean:
-	rm *.o
+	rm  *.o
 
 fclean: clean
 	rm ${NAME}

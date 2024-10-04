@@ -3,20 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbouhadr <cbouhadr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cw3l <cw3l@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:34:03 by cbouhadr          #+#    #+#             */
-/*   Updated: 2024/10/02 16:54:01 by cbouhadr         ###   ########.fr       */
+/*   Updated: 2024/10/04 12:47:23 by cw3l             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include<unistd.h>
-# include<stdio.h>
-# include<stdlib.h>
-# include<string.h>
+# include <unistd.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+# include <assert.h>
 
 //Partie 1
 int		ft_isalpha(int c);
@@ -73,5 +74,15 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+// debug
+
+# define CONTENT_AS_STRING(content) ((char *)(content))
+# define PRINT_STR(msg) printf("voici la chaine de caractère:  %s\n", msg)
+# define START_DEBUGG printf("Demarage de la fonction: %s\n",__func__)
+# define END_DEBUGG printf("\nFIN de la fonction\n")
+# define PRINT_PTR(msg) printf("voici le pointeur:  %p\n", msg)
+# define PRINT_INT(msg) printf("voici la valeur de l'entier %i\n", msg)
+# define PRINT_FLOAT(msg) printf("voici la valeur de l'entier %i\n", msg)
 
 #endif
