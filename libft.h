@@ -6,7 +6,7 @@
 /*   By: cw3l <cw3l@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:34:03 by cbouhadr          #+#    #+#             */
-/*   Updated: 2024/10/04 12:47:23 by cw3l             ###   ########.fr       */
+/*   Updated: 2024/10/04 17:42:22 by cw3l             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 # define PRINT_STR(msg) printf("voici la chaine de caractère:  %s\n", msg)
 # define START_DEBUGG printf("Demarage de la fonction: %s\n",__func__)
 # define END_DEBUGG printf("\nFIN de la fonction\n")
+# define TEST_OK printf("\ntest testminer avec succes\n")
 # define PRINT_PTR(msg) printf("voici le pointeur:  %p\n", msg)
-# define PRINT_INT(msg) printf("voici la valeur de l'entier %i\n", msg)
+# define PRINT_INT(msg) printf("voici la valeur de l'entier %d\n", msg)
+# define PRINT_SIZE_T(msg) printf("voici la valeur de l'entier %zu\n", msg)
 # define PRINT_FLOAT(msg) printf("voici la valeur de l'entier %i\n", msg)
+# define PRINT_CHAR(msg) printf("voici le caractère: %c\n", msg)
 
 #endif
